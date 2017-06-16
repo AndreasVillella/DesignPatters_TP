@@ -1,4 +1,4 @@
-package exercice4;
+package exercice4.pizza;
 
 public class Margarita extends Pizza {
 

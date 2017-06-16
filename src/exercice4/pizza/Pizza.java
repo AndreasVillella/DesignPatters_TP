@@ -1,4 +1,4 @@
-package exercice4;
+package exercice4.pizza;
 
 import java.text.NumberFormat;
 
@@ -14,7 +14,9 @@ public abstract class Pizza {
     public String toString(){
     	NumberFormat format=NumberFormat.getInstance();
         format.setMinimumFractionDigits(2);// 2 chiffres après la virgule suffisent pour l'affichage.
-        return getNom()+" : "+getDescription()+" "+format.format(getPrix())+"€";
+        return "Nom de la pizza : "+getNom()+
+        		"\nIngrédient(s) : "+getIngredientBase()+
+        		"\nPrix : "+format.format(getPrix())+"€";
     }
 		
 	public String getNom() {

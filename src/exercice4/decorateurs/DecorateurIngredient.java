@@ -1,4 +1,6 @@
-package exercice4;
+package exercice4.decorateurs;
+
+import exercice4.pizza.Pizza;
 
 public abstract class DecorateurIngredient extends Pizza {
 
