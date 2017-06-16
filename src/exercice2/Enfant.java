@@ -26,8 +26,7 @@ public class Enfant implements Personne {
 
 	@Override
 	public void print() {
-		System.out.printf(this.getNom(), this.getPrenom());
-		
+		System.out.printf(this.getNom(), this.getPrenom());	
 	}
 	
 }

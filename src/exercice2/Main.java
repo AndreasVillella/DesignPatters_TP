@@ -4,24 +4,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Homme h1 = new Homme("Villella", "Andreas");
-		Femme f1 = new Femme("Tchoin", "Dorine");
-		Enfant e1 = new Enfant("TchoinTchoin", "Tchoin");
+		Homme h1 = new Homme("Villella","Andreas");
+		Femme f1 = new Femme("Rouzé", "Aurelien");
+		Enfant e1 = new Enfant("Kunis","Mila");
 		
 		PersonneComposite pc = new PersonneComposite();
 		
-		
 		pc.add(h1);
 		pc.add(f1);
-		
-		Personne.add(pc);
-		Personne.print();
-		
-		
-		
-		
-		
-
+		pc.add(e1);
+			
+		pc.print();
 	}
 
 }

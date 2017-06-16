@@ -1,9 +1,7 @@
 package exercice2;
 
-interface Personne {
+public interface Personne {
 
 	public void print();
-
-
 	
 }

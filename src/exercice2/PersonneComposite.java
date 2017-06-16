@@ -22,7 +22,8 @@ public class PersonneComposite implements Personne{
 		
 	}
 
-	
 	//Add Remove Delete Se marier
-
+	public void seMarier(){
+		
+	}
 }
