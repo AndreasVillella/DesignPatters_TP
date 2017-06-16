@@ -17,12 +17,6 @@ public class Pont {
 		}
 		return INSTANCE;
 	}
-
-	public static String setOutil(){
-		Marteau.getInstance();
-		String nom = Schtroumpf.getNom();
-		return nom+"tiens le marteau";
-	}
 	
 	//Getters & Setters
 	public static Pont getINSTANCE() {
@@ -32,6 +26,15 @@ public class Pont {
 	public static void setINSTANCE(Pont iNSTANCE) {
 		INSTANCE = iNSTANCE;
 	}
+
+	public int getNbCoupsMarteauNecessaires() {
+		return nbCoupsMarteauNecessaires;
+	}
+
+	public void setNbCoupsMarteauNecessaires(int nbCoupsMarteauNecessaires) {
+		this.nbCoupsMarteauNecessaires = nbCoupsMarteauNecessaires;
+	}
+	
 
 }
 	

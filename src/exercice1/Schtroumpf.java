@@ -2,7 +2,9 @@ package exercice1;
 
 public abstract class Schtroumpf implements Runnable {
 	
+	//attributs
 	private static String nom;
+	Pont objectif;
 	
 	public Schtroumpf(String nom) {
 		super();
@@ -37,8 +39,19 @@ public abstract class Schtroumpf implements Runnable {
 		}
 		return prendMarteau();
 	}
-		
 	
+	public static String setOutil(){
+		Marteau outil = Marteau.getInstance();
+		String nom = Schtroumpf.getNom();
+		return nom+"tiens le marteau";
+	}	
+	
+	public void Run(){
+		Pont p = Pont.getInstance();
+		while(p.getNbCoupsMarteauNecessaires()>0){
+			prendMarteau();
+		}
+	}
 	
 	//Getters & Setters
 	public static String getNom() {
@@ -47,6 +60,14 @@ public abstract class Schtroumpf implements Runnable {
 	
 	public static void setNom(String nom) {
 		Schtroumpf.nom = nom;
+	}
+
+	public Pont getObjectif() {
+		return objectif;
+	}
+
+	public void setObjectif(Pont objectif) {
+		this.objectif = objectif;
 	}	
 	
 }
