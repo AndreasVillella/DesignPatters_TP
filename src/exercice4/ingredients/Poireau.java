@@ -20,4 +20,8 @@ public class Poireau extends DecorateurIngredient {
     public String getIngredientBase(){
 		return "2 poireaux"; 	
     }
+    
+    public int getTempsCuisson(){
+		return pizza.getTempsCuisson()+5;
+	}
 }

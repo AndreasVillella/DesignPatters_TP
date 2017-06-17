@@ -20,4 +20,8 @@ public class Fromage extends DecorateurIngredient {
     public String getIngredientBase(){
 		return "Gruyère"; 	
     }
+    
+    public int getTempsCuisson(){
+		return pizza.getTempsCuisson()+1;
+	}
 }

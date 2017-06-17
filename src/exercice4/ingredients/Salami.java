@@ -21,4 +21,7 @@ public class Salami extends DecorateurIngredient {
 		return "5 tranches de salami"; 	
     }
     
+    public int getTempsCuisson(){
+		return pizza.getTempsCuisson()+8;
+	}
 }

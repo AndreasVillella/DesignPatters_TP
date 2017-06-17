@@ -20,4 +20,8 @@ public class Caviar extends DecorateurIngredient {
     public String getIngredientBase(){
 		return "250g de caviar"; 	
     }
+    
+    public int getTempsCuisson(){
+		return pizza.getTempsCuisson()+2;
+	}
 }

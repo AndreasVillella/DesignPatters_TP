@@ -20,4 +20,8 @@ public class JambonHalal extends DecorateurIngredient {
     public String getIngredientBase(){
 		return "Du bon jambon halal"; 	
     }
+    
+    public int getTempsCuisson(){
+		return pizza.getTempsCuisson()+1;
+	}
 }
