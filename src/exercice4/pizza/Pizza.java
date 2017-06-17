@@ -1,8 +1,9 @@
 package exercice4.pizza;
 
 import java.text.NumberFormat;
+import java.util.Observable;
 
-public abstract class Pizza {
+public abstract class Pizza extends Observable {
 
 	private String nom;
 	private float prix;
@@ -69,6 +70,8 @@ public abstract class Pizza {
 
 	public void setCuit(boolean cuit) {
 		this.cuit = cuit;
+		setChanged();
+		notifyObservers(this.cuit);
 	}
 		 
 }
