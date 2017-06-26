@@ -13,7 +13,7 @@ public class Transformateur implements Chargeur, Runnable {
 				} 
 				else{
 					System.out.println("[" + Thread.currentThread().getName() + "]" +
-							"[" + machine.getStock() + "] la boulangerie est pleine.") ;
+							"[" + machine.getStock() + "] la boulangerie est pleine.");
 				} 
 			}
 		}catch (InterruptedException e) {
